@@ -1,0 +1,27 @@
+{
+  "name": "watchlist",
+  "version": "1.0.0",
+  "description": "Watchlist dock item.",
+  "main": "./lib/watchlist",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "via",
+    "trading",
+    "watchlist"
+  ],
+  "repository": "https://bitbucket.org/via-trading/watchlist",
+  "author": "Dakota Gordon",
+  "engines": {
+    "via": "*"
+  },
+  "dependencies": {
+    "etch": "^0.12.5"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.6.0"
+  },
+  "configSchema": {}
+}

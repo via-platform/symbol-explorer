@@ -1,6 +1,6 @@
 {
   "name": "watchlist",
-  "version": "1.0.0",
+  "version": "0.1.1",
   "description": "Watchlist dock item.",
   "main": "./lib/main",
   "scripts": {
@@ -11,7 +11,10 @@
     "trading",
     "watchlist"
   ],
-  "repository": "https://bitbucket.org/via-trading/watchlist",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/via-trading/watchlist.git"
+  },
   "author": "Dakota Gordon",
   "engines": {
     "via": "*"

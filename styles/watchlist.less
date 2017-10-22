@@ -1,18 +1,112 @@
-@import "ui-variables";
+@import "variables";
 
 .watchlist
 {
-    .toolbar
-    {
-        // background: #181818;
-        padding: 10px;
-        height: 45px;
-        // border-top: 1px solid #111;
-        border-bottom: 1px solid #0b0b0b;
+    font-size: 12px;
+    font-weight: 400;
+    color: #AAA;
 
-        .toolbar-search
+    .list-tree
+    {
+        margin: 0;
+        list-style: none;
+        padding: 0;
+
+        &.full-menu
+        {
+            position: relative;
+            min-width: min-content;
+            isolation: isolate;
+            padding: 0 10px 0 7px;
+            flex-grow: 1;
+        }
+    }
+
+    li.list-nested-item > .list-item
+    {
+        line-height: 30px;
+        cursor: default;
+
+        .name
         {
             flex: 1;
+        }
+    }
+
+    .list-tree.has-collapsable-children
+    {
+        .list-nested-item > .list-tree > li
+        {
+            padding-left: 17px;
+            line-height: 30px;
+            cursor: default;
+
+            .name
+            {
+                flex: 1;
+            }
+        }
+    }
+
+    .category.expanded
+    {
+        > .header > .caret
+        {
+            transform: rotate(90deg);
+        }
+    }
+
+    .caret
+    {
+        width: 12px;
+        height: 12px;
+        margin: 0 6px 0 0;
+        background-repeat: no-repeat;
+        background-size: 12px auto;
+        background-position: 0 0;
+        transition: all ease 0.15s;
+    }
+
+    .favorite-icon
+    {
+        width: 10px;
+        height: 10px;
+        margin: 0 8px 0 0;
+        border: 2px solid lighten(@pane-background-color, 20%);
+        border-radius: 5px;
+    }
+
+    .header
+    {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .selected
+    {
+        &::before
+        {
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 30px;
+            background: lighten(@pane-background-color, 4%);
+            content: "";
+        }
+
+        > .header > .name, > .name
+        {
+            color: #EEE;
+        }
+    }
+
+    .favorite
+    {
+        .favorite-icon
+        {
+            border-color: @primary-color;
+            background-color: @primary-color;
         }
     }
 }

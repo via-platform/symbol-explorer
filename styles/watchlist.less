@@ -5,6 +5,7 @@
     font-size: 12px;
     font-weight: 400;
     color: #AAA;
+    overflow: auto;
 
     .list-tree
     {
@@ -76,6 +77,17 @@
         border-radius: 5px;
     }
 
+    .unavailable-icon
+    {
+        width: 15px;
+        height: 14px;
+        margin-left: 6px;
+        background-size: 13px auto;
+        background-position: 1px 1px;
+        background-repeat: no-repeat;
+        display: none;
+    }
+
     .header
     {
         display: flex;
@@ -107,6 +119,24 @@
         {
             border-color: @primary-color;
             background-color: @primary-color;
+        }
+    }
+
+    .status-unavailable
+    {
+        .name
+        {
+            color: #666;
+        }
+
+        .last
+        {
+            display: none;
+        }
+
+        .unavailable-icon
+        {
+            display: block;
         }
     }
 }

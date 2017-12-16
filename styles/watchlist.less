@@ -25,7 +25,7 @@
 
     li.list-nested-item > .list-item
     {
-        line-height: 30px;
+        line-height: 28px;
         cursor: default;
 
         .name
@@ -39,7 +39,7 @@
         .list-nested-item > .list-tree > li
         {
             padding-left: 17px;
-            line-height: 30px;
+            line-height: 28px;
             cursor: default;
 
             .name
@@ -62,9 +62,8 @@
         width: 12px;
         height: 12px;
         margin: 0 6px 0 0;
-        background-repeat: no-repeat;
+        background: url('via://watchlist/images/caret.svg') 0 0 no-repeat;
         background-size: 12px auto;
-        background-position: 0 0;
         transition: all ease 0.15s;
     }
 
@@ -73,7 +72,7 @@
         width: 10px;
         height: 10px;
         margin: 0 8px 0 0;
-        border: 2px solid lighten(@pane-background-color, 20%);
+        border: 2px solid rgba(255, 255, 255, 0.3);
         border-radius: 5px;
     }
 
@@ -95,6 +94,15 @@
         position: relative;
     }
 
+    .favorite
+    {
+        .favorite-icon
+        {
+            border-color: @primary-color;
+            background-color: @primary-color;
+        }
+    }
+
     .selected
     {
         &::before
@@ -102,23 +110,14 @@
             position: absolute;
             left: 0;
             right: 0;
-            height: 30px;
-            background: lighten(@pane-background-color, 4%);
+            height: 28px;
+            background: #333;
             content: "";
         }
 
         > .header > .name, > .name
         {
-            color: #EEE;
-        }
-    }
-
-    .favorite
-    {
-        .favorite-icon
-        {
-            border-color: @primary-color;
-            background-color: @primary-color;
+            // color: #000;
         }
     }
 

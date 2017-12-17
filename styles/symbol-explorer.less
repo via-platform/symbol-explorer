@@ -1,11 +1,12 @@
 @import "variables";
 
-.watchlist
+.symbol-explorer
 {
     font-size: 12px;
     font-weight: 400;
     color: @text-color-subtle;
     overflow: auto;
+    user-select: none;
 
     .list-tree
     {
@@ -21,16 +22,16 @@
             padding: 0 10px 0 7px;
             flex-grow: 1;
         }
-    }
 
-    li.list-nested-item > .list-item
-    {
-        line-height: 28px;
-        cursor: default;
-
-        .name
+        li.list-nested-item > .list-item
         {
-            flex: 1;
+            line-height: 28px;
+            cursor: default;
+
+            .name
+            {
+                flex: 1;
+            }
         }
     }
 
@@ -62,7 +63,7 @@
         width: 12px;
         height: 12px;
         margin: 0 6px 0 0;
-        background: url('via://watchlist/images/caret.svg') 0 0 no-repeat;
+        background: url('via://symbol-explorer/images/caret.svg') 0 0 no-repeat;
         background-size: 12px auto;
         transition: all ease 0.15s;
     }
@@ -80,10 +81,9 @@
     {
         width: 15px;
         height: 14px;
-        margin-left: 6px;
+        margin-left: 10px;
+        background: url('via://symbol-explorer/images/caution.svg') 1px 1px no-repeat;
         background-size: 13px auto;
-        background-position: 1px 1px;
-        background-repeat: no-repeat;
         display: none;
     }
 
@@ -92,6 +92,13 @@
         display: flex;
         align-items: center;
         position: relative;
+    }
+
+    .source
+    {
+        font-size: 10px;
+        font-weight: 500;
+        color: fade(@text-color-subtle, 50%);
     }
 
     .favorite
@@ -103,7 +110,7 @@
         }
     }
 
-    .selected
+    .list-tree .selected
     {
         &::before
         {

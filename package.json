@@ -1,7 +1,7 @@
 {
-  "name": "watchlist",
+  "name": "symbol-explorer",
   "version": "0.1.3",
-  "description": "Watchlist dock item.",
+  "description": "Browse all of the symbols that Via tracks.",
   "main": "./lib/main",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,9 +9,10 @@
   "keywords": [
     "via",
     "trading",
-    "watchlist"
+    "symbol",
+    "explorer"
   ],
-  "repository": "https://github.com/via-platform/watchlist.git",
+  "repository": "https://github.com/via-platform/symbol-explorer.git",
   "author": "Dakota Gordon",
   "engines": {
     "via": "*"

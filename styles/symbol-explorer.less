@@ -17,10 +17,8 @@
         &.full-menu
         {
             position: relative;
-            min-width: min-content;
             isolation: isolate;
             padding: 0 10px 0 7px;
-            flex-grow: 1;
         }
 
         li.list-nested-item > .list-item
@@ -31,6 +29,10 @@
             .name
             {
                 flex: 1;
+                padding-right: 10px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
             }
         }
     }
@@ -46,6 +48,10 @@
             .name
             {
                 flex: 1;
+                padding-right: 10px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
             }
         }
     }

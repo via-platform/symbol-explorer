@@ -1,25 +1,28 @@
 {
-  "name": "symbol-explorer",
-  "version": "0.4.5",
-  "description": "Browse all of the symbols that Via tracks.",
-  "main": "./lib/main",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "via",
-    "trading",
-    "symbol",
-    "explorer"
-  ],
-  "repository": "https://github.com/via-platform/symbol-explorer.git",
-  "author": "Dakota Gordon",
-  "engines": {
-    "via": "*"
-  },
-  "dependencies": {
-    "etch": "^0.12.5",
-    "underscore-plus": "^1.6.6"
-  },
-  "configSchema": {}
+    "name": "symbol-explorer",
+    "version": "0.4.5",
+    "description": "Browse all of the symbols that Via tracks.",
+    "main": "./lib/main",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "via",
+        "trading",
+        "symbol",
+        "explorer"
+    ],
+    "repository": "https://github.com/via-platform/symbol-explorer.git",
+    "author": "Dakota Gordon",
+    "engines": {
+        "via": "*"
+    },
+    "deserializers": {
+        "SymbolExplorer": "getSymbolExplorerInstance"
+    },
+    "dependencies": {
+        "etch": "^0.12.5",
+        "underscore-plus": "^1.6.6"
+    },
+    "configSchema": {}
 }

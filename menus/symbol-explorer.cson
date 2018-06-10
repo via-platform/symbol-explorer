@@ -1,0 +1,11 @@
+'menu': [
+  {
+    'label': 'View'
+    'submenu': [
+      'label': 'Components'
+      'submenu': [
+        { 'label': 'Symbol Explorer', 'command': 'symbol-explorer:show' }
+      ]
+    ]
+  }
+]

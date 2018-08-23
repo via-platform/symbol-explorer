@@ -1,6 +1,6 @@
 {
   "name": "symbol-explorer",
-  "version": "0.6.2",
+  "version": "0.7.0",
   "description": "Browse all of the symbols that Via tracks.",
   "main": "./lib/main",
   "scripts": {

@@ -24,11 +24,5 @@
     "etch": "^0.12.5",
     "underscore-plus": "^1.6.6"
   },
-  "configSchema": {
-    "hideInactiveMarkets": {
-      "type": "boolean",
-      "default": true,
-      "description": "Hide markets that are no longer trading, either due to expiration, removal, or exchange closure."
-    }
-  }
+  "configSchema": {}
 }
